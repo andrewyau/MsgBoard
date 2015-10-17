@@ -26,5 +26,13 @@ namespace MsgBoard.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Contact(ContactModel model)
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
